@@ -1,5 +1,5 @@
 # Data-Structure
-This repository is mainly open to those who are looking to make some PRs for the Hacktoberfest event. In this repository you can add programs on Data Structures and some useful algorithms for Competitive Programming.
+This repository is mainly open to those who are looking to make some PRs for the Hacktoberfest event. In this repository you can add programs on Data Structures and some useful algorithms for Competitive Programming in any language of your choice.
 
 # How to contribute:
 <li>Find the folder that fits the category of your code and submit a PR.</li>
@@ -15,6 +15,7 @@ Thanks for taking the time to contribute to this project. Before making PRs, ple
 - Place your code in right directory.
 - Give your files names that are relevant and meaningful for example : SubsetSum.py
 - If you will follow all the guidelines while contributing I'll be merging all your changes into the master branch of this project.
+- Mention your name in form of a comment inside your code. 
 
 <h2>Hacktoberfest-2k20 bash</h2>
 <p>Do you have a solution for a problem which isn't already present? Want to complete four PRs for Hacktoberbest-2k20. Send a PR of your solution in any programming language.</p>

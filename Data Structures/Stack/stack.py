@@ -5,7 +5,7 @@ top:integer having position of top most element in the stack
 """
 def isEmpty(stk):
     if stk == []:
-        return true
+        return True
     else:
         return False
 def Push(stk, item):

@@ -27,10 +27,6 @@ class LinkedList {
 
 		/* Now next of the second Node refers to third. So all three
 			nodes are linked.
-
-		llist.head	 second			 third
-			|			 |				 |
-			|			 |				 |
 		+----+------+	 +----+------+	 +----+------+
 		| 1 | o-------->| 2 | o-------->| 3 | null |
 		+----+------+	 +----+------+	 +----+------+ */

@@ -1,6 +1,6 @@
 # Sweta Snigdha Sahoo
 # author-swetasahoo29
-# question
+# Question
 #  Write a Python program to find the list of words that are longer than n from a given list of words. 
 def long_words(n, str):
     word_len = []

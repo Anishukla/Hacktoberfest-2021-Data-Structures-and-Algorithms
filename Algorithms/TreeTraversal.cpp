@@ -18,14 +18,14 @@ void Postorder(int In[],int Pre[], int n ){
 		
 	int indexofroot;
 	for(int i=0;i<n;i++){
-			if(Pre[0]==In[i]){
-					indexofroot = i;
-					break;
-			}
+		if(Pre[0]==In[i]){
+				indexofroot = i;
+				break;
+		}
 	}
 
 	if(indexofroot!=0)
-			Postorder(In,Pre+1,indexofroot);
+		Postorder(In,Pre+1,indexofroot);
 
 	if(indexofroot!=n-1)
 		Postorder(In+indexofroot+1,Pre+indexofroot+1,n-indexofroot-1);
@@ -41,10 +41,10 @@ int main(){
 	int In[n];
 	int Pre[n];
 	for(int i=0;i<n;i++){
-			cin>>Pre[i];
+		cin>>Pre[i];
 	}
 	for(int i=0;i<n;i++){
-			cin>>In[i];
+		cin>>In[i];
 	}
 	
 	Postorder(In,Pre,n);

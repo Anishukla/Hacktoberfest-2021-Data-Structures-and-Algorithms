@@ -24,4 +24,8 @@ for input in inputs:
     fizzbuzz(input)
     
     
-# Run: python fizzbuzz.py <enter number you need to check>
+#Run: python fizzbuzz.py <enter number you need to check>
+
+
+#Complexity: Beginner Level jobs
+#Contributor: Anshul

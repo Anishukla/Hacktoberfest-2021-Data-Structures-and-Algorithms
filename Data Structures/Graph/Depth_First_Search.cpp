@@ -10,6 +10,7 @@ vector<int> dep(N); // It contains the depth of all vertices from the the initia
 bool vis[N]; // Initially All nodes are not visited hence every element i.e. V[i] = false
 
 //General DFS
+//Complexity : O(Number of Vertices + Number of Edges)
 void dfs(int vertex)
 {
     vis[vertex]=true;
@@ -22,13 +23,14 @@ void dfs(int vertex)
 }
 
 //DFS with depth
-void dfs(int vertex, int depth)
+void dfs_depth(int vertex, int depth)
 {
     vis[vertex]=true;
+    cout << vertex << " " << depth << '\n';
     dep[vertex]=depth;
     for(auto i: A[vertex]){
         if(!vis[i]){
-            dfs(i,depth+1);
+            dfs_depth(i,depth+1);
         }
     }
 } 
@@ -46,15 +48,27 @@ int main()
         A[b].push_back(a);
     }
     /* Input : 
-       4 6
-       1 2
-       3 4
-       2 3
-       0 1
-       1 0
-       2 4
+        4 5
+        3 4
+        2 3
+        0 1
+        1 2
+        2 4
     */
-    cout << "Depth First Traversal in starting from vertex 0 : " ;
-    dfs(0);
+    cout << "Depth First Traversal starting from vertex 4 : " ;
+    dfs(4);
+    /* 
+       Output : Depth First Traversal starting from vertex 4 : 4 3 2 1 0
+    */
+    cout << "Depth First Traversal with Depth to other vertices starting from vertex 3 : " ;
+    dfs_depth(3,0);
+    /* Output : 
+        Depth First Traversal with Depth to other vertices starting from vertex 3 : 
+            3 0
+            4 1
+            2 2
+            1 3
+            0 4
+    */
     return 0;
 }

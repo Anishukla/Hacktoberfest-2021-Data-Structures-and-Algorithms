@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 // author : @akashksinghal
+// Akash Kumar Singhal
 using namespace std;
 
 #define N 1000000
@@ -53,6 +54,7 @@ int main()
        1 0
        2 4
     */
-
+    cout << "Depth First Traversal in starting from vertex 0 : " ;
+    dfs(0);
     return 0;
 }

@@ -52,3 +52,12 @@ class Solution {
         path.remove(node);
     }
 }
+
+/*Time complexity : O(m) + O(n) where m = number of prerequisite relations 
+                                      n = number of courses
+  O(m) for creating the adjacency list and O(n) for traversing through each node/course once.
+
+  Space complexity : O(n) where n = number of courses. For storing path, visited array and adjacency list
+*/  
+
+/* Contributed by : Manish Das */

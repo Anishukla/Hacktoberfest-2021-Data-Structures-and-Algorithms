@@ -18,8 +18,8 @@ Thanks for taking the time to contribute to this project. Before making PRs, ple
 - If you will follow all the guidelines while contributing I'll be merging all your changes into the master branch of this project.
 - Mention your name in form of a comment inside your code. 
 
-<h2>Hacktoberfest-2k20 bash</h2>
-<p>Do you have a solution for a problem which isn't already present? Want to complete four PRs for Hacktoberbest-2k20. Send a PR of your solution in any programming language.</p>
+<h2>Hacktoberfest-2k21 bash</h2>
+<p>Do you have a solution for a problem which isn't already present? Want to complete four PRs for Hacktoberbest-2k21. Send a PR of your solution in any programming language.</p>
 <h5><a href="https://hacktoberfest.digitalocean.com/">Check your current hacktoberfest progress</a></h5>
 
 <h3>Learning resources</h3>

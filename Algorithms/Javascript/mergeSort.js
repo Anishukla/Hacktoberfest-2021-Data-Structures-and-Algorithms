@@ -7,7 +7,7 @@
 
 // A function to merge 2 subarrays into a single sorted array
 function merge(arr1, arr2) {
-	// two pointes for the first index of both arrays
+	// two pointers for the first index of both arrays
 	let i = 0,
 		j = 0;
 
@@ -27,7 +27,7 @@ function merge(arr1, arr2) {
 	}
 
 	// If arr1's elements are all pushed to the result, push the entire arr2 to the result jth index onwards
-	// add rest of the reamining subarray
+	// add rest of the remaining subarray
 	while (i < arr1.length) {
 		res.push(arr1[i]);
 		i++;

@@ -8,7 +8,7 @@ int main() {
 	cin>>t;
 	while(t--)
 	{
-		int n;
+		int n; //length of the array
 		cin>>n;
 		int A[n];
 		for(int i=0;i<n;i++)

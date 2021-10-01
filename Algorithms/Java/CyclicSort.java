@@ -2,7 +2,7 @@
 // Whenever you are given an array or list of numbers in range of [1, n].
 // It can also be from [0, n-1]. Basically it has to be continous.
 // eg. [3, 2, 1, 4, 5]; [1, n] where n is 5.
-// It's a good algorith as it worst case scenario is O(n). 
+// It's a good algorithm as it worst case scenario is O(n). 
 
 import java.util.Arrays;
 
@@ -20,7 +20,7 @@ public class Main
         int i = 0;
         while(i < arr.length)
         {
-            int correct = arr[i] - 1; // keep in mind that array starts with 0, thus we have to // subtract 1
+            int correct = arr[i] - 1; // keep in mind that array starts with 0, thus we have to subtract 1
             if(arr[i] != arr[correct])
             {
                 swap(arr, i, correct);

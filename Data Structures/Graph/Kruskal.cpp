@@ -5,6 +5,7 @@
 //1. Sort according to wieght;
 //2. Using DSU try to find that respective edge form a cycle or not if not add the edge.
 
+// Name: Vedant Jain
 #include <bits/stdc++.h>
 using namespace std;
 class DSU{

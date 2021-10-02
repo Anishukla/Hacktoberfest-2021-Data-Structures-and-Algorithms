@@ -24,6 +24,9 @@ Greedy Approach:
             here the (i+1)th interval is overlapping with ith interval for some length. 
             Hence, we remove the (i+1)th interval because, it may overlap with some other interval for the rest of length.
             and We want to find minimum removals. Hence we will remove (i+1)th interval
+
+The worst case time complexity for this solution is O(N)
+The worst case space complexity for this solution is O(1)
 '''
 class Solution:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:

@@ -1,6 +1,9 @@
 #HackerRank-Python-Sets
 #Difficulty : medium
+#Complexity : O(N)
+#Author : Hasti Sutaria
 
+#Taking the input as list and set 
 if __name__ == '__main__':
     n, m = map(int, input().split())
     N = list(map(int, input().split()))
@@ -16,5 +19,5 @@ if __name__ == '__main__':
             happiness -= 1
 
     print(happiness)
+    
 
-#Author : Hasti Sutaria

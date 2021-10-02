@@ -8,6 +8,7 @@ class Solution {
 public:
     void sortColors(vector<int>& nums) {
         int low=0, mid =0, high=nums.size()-1;
+	// Basically the Dutch National Flag Sorting Algorithm
 	// If 0 is found at mid position swap with low so it can be at the beginning
 	// If 1 is found at mid then it is at the correct position
 	// If 2 is found at mid then swap with high so it can be at the end

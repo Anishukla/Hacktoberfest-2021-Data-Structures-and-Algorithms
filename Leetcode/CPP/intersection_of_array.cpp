@@ -6,13 +6,18 @@ it shows in both arrays and you may return the result in any order.
 Input: nums1 = [1,2,2,1] nums2 = [2,2]
 
 Output: 2, 2
+
+Complexities:
+Time Complexity: O(nlogn+mlogm), where n and m are the lengths of the arrays. 
+We sort two arrays independently, and then do a linear scan.
+
+Space Complexity: from O(logn+logm) to O(n+m)
 */
 
-#include <bits/stdc++.h>
-using namespace std;
-
-void intersect(vector<int>& nums1, vector<int>& nums2) {
-    // sort the two vectors
+class Solution {
+public:
+   
+     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
         sort(nums1.begin(), nums1.end());
         sort(nums2.begin(), nums2.end());
         vector<int> nums;
@@ -30,35 +35,7 @@ void intersect(vector<int>& nums1, vector<int>& nums2) {
                 ++j;
             }
         }
-    
-        for(int k=0; k<nums.size(); k++){
-            cout << nums[k] << " ";
-            }
-   
+        return nums;
         
     }
-
-int main(){
-    int n,m,a;
-    cin>>n>>m;  //take the size of vector g1 and vector g2
-  
-
-    vector<int> g1;
-    vector<int> g2;
-
-  
-    for (int i = 1; i <=n ; i++){
-        cin>>a;
-        g1.push_back(a);
-    }
-
-     for (int i = 1; i <= m; i++){
-        cin>>a;
-        g2.push_back(a); 
-     }
-    
-    //Call the function forthe intersectio of g1 and g2
-    intersect(g1, g2);
-
-     return 0;
-}
+};

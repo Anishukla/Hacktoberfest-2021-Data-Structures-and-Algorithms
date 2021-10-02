@@ -1,3 +1,5 @@
+// Abd El-Twab M. Fakhry <abdeltwab (dot) m (dot) fakhry (at) gmail (dot) com>
+
 template <class T, class F = function <T(const T&, const T&)> >
 class SparseTable {
   int _N;

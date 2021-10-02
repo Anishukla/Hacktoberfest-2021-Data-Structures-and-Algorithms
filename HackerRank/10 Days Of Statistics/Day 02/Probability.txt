@@ -1,0 +1,93 @@
+Basic Probability --->
+
+	In a single toss of 2 fair (evenly-weighted) six-sided dice, find the probability that their sum will be at most 9.
+
+	a)	2/3
+	b)	5/6
+	c)	1/4
+	d)	1/6
+
+
+	Answer -->
+
+		We define E to be the event in which the sum rolled by two evenly-weighted dice is >9.
+
+		The set of outcomes satisfying E is: (4,6) (6,4) (5,5) (6,5) (5,6) (6,6). We can use this to find:
+			
+							P(E) = abs(E)/abs(S) = 6/36 = 1/6
+
+		We want to find the probability of sum being <=9 . Because we have  and we know that the probability we want comprises the rest of the sample space, we calculate it as follows:
+							1-P(E) = 1 - (1/6) = 5/6
+
+
+
+More Dice --->
+
+	In a single toss of 2 fair (evenly-weighted) six-sided dice, find the probability that the values rolled by each die will be different and the two dice have a sum of 6.
+
+	a)	1/9
+	b)	1/6
+	c)	2/3
+	d)	5/6
+
+
+	ANSWER -->
+		We define E to be the event satisfying the following conditions:
+
+
+		1.	The values rolled by both dice are different.
+		2.	The sum of the values rolled is 6.
+
+		The set of outcomes satisfying E is: (1,5) , (5,1) , (2,4) , (4,2). We also know that |S| (the size of the sample space) is 36, because there are 6 possible rolls per die and we have 2 dice (6^2 = 36) We can use this to find:
+								P(E) = |E|/|S| = 4/36 = 1/9
+
+
+
+
+Compound Event Probability --->
+
+	There are 3 urns labeled X, Y, and Z.
+
+	Urn X contains 4 red balls and 3 black balls.
+	Urn Y contains 5 red balls and 4 black balls.
+	Urn Z contains 4 red balls and 4 black balls.
+
+	One ball is drawn from each of the 3 urns. What is the probability that, of the 3 balls drawn, 2 are red and 1 is black?
+
+	a)	10/63
+	b)	2/7
+	c)	17/42
+	d)	31/126
+
+
+	ANSWER -->
+		Let's define the following events:
+
+
+		Urn X 
+		: E(X,R) Four of the seven balls are red, so P(E(X,R)) = 4/7.
+		: E(X,B) Three of the seven balls are black, so P(E(X,B)) = 3/7.
+
+		Urn Y
+		: E(Y,R) Five of the nine balls are red, so P(E(Y,R)) = 5/9.
+		: E(Y,B) Four of the nine balls are black, so P(E(Y,B)) = 4/9.
+
+		Urn Z
+		: E(Z,R) Four of the eight balls are red, so P(E(Z,R)) = 1/2.
+		: E(Z,B) Four of the eight balls are black, so P(E(Z,B)) = 1/2.
+
+		Let E(X,Y,Z) be the result of drawing 1 ball from each urn. We care about three scenarios:
+
+		1.	E(R,R,B)
+			P(E(R,R,B)) = P(E(X,R)) X P(E(Y,R)) X P(E(Z,B)) = 20/126
+
+		2.	E(R,B,R)
+			P(E(R,B,R)) = P(E(X,R)) X P(E(Y,B)) X P(E(Z,R)) = 16/126
+
+		3.	E(B,R,R)
+			P(E(B,R,R)) = P(E(X,B)) X P(E(Y,R)) X P(E(Z,R)) = 15/126
+
+		Now, let's find the probabilty for the event E, getting two red and one black balls. Because each event is independent of one another, we can simply sum their probabilities:
+
+
+		P(2 balls are red and 1 is black) = P(E(R,R,B)) + P(E(R,B,R)) + P(E(B,R,R)) = 51/126 = 17/42

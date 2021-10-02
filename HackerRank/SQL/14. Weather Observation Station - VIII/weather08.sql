@@ -1,0 +1,1 @@
+SELECT DISTINCT(city) FROM station WHERE REGEXP_LIKE(LOWER(city), '^[aeiou]') AND REGEXP_LIKE(LOWER(city), '[aeiou]$');

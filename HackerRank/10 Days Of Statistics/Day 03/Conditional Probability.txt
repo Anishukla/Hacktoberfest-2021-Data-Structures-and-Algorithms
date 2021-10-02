@@ -1,0 +1,41 @@
+PROBLEM 1 --->
+	Suppose a family has 2 children, one of which is a boy. What is the probability that both children are boys?
+
+	a)	1/3
+	b)	1/2
+	c)	2/3
+	d)	1/9
+
+	ANSWER -->
+		A way to approach this problem is to reduce the sample space so that it only contains events where one child is a boy: S(B) = {BB, BG, GB}.
+
+		If we consider event E to be the event in which both children are boys (so E = {BB}), we can find the probability as a fraction of the reduced sample space:
+
+							P(E) = |E|/|S| = 1/3
+
+
+PROBLEM 2 --->
+	You draw 2 cards from a standard 52-card deck without replacing them. What is the probability that both cards are of the same suit?
+
+	a)	1/156
+	b)	1/39
+	c)	12/39
+	d)	12/51
+
+	ANSWER -->
+		The first card drawn will be from any of the 4 suits and there will be 51 cards left in the deck, only 12 of which match the drawn card's suit. The probability of the second card being of the same suit is 12/51 = 4/17.
+
+
+PROBLEM 3 --->
+	A bag contains  red marbles and  blue marbles. Then,  marbles are drawn from the bag, at random, without replacement. If the first marble drawn is red, what is the probability that the second marble is blue?
+
+	a)	1/12
+	b)	7/12
+	c)	1/6
+	d)	2/3
+
+	ANSWER -->
+		Our bag starts out with 3 red marbles and 4 blue marbles. Then, 2 marbles are drawn (without replacement) from the bag. We must assume that the first marble to be drawn is red, then find the probability that the second marble is blue. Note that we are not looking for the probability that both events occur, we are only looking for the probability that the second event occurs in a given state.
+
+
+		After 1 red marble is drawn, there will be 2 red marbles and 4 blue marbles in the bag. So, in the bag's current state, there is a  probability of drawing a red marble and a 2/6 probability of drawing a blue marble. Because our goal is to find the probability of drawing a blue marble, our answer is 4/6 (which reduces to 2/3).

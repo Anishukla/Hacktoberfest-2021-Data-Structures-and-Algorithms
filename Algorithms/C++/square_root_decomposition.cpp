@@ -1,3 +1,6 @@
+/** Abd El-Twab M. Fakhry <abdeltwab (dot) m (dot) fakhry (at) gmail (dot) com>
+**/
+
 const int N = 5e5 + 9, M = 1e3 + 9, oo = 0x3f3f3f3f, Mod = 1e9 + 7;
 const ll INF = 0x3f3f3f3f3f3f3f3f;
 const int BLK = 256;
@@ -55,4 +58,3 @@ void Solve() {
       update(x, y);
   }
 }
-

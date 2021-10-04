@@ -1,7 +1,7 @@
 // implement a queue data structure using two stacks
 // implement functions add, remove, and peek
 
-const Stack = require('../stack/stack');
+const Stack = require('../../Data\ Structures/Stack/stack');
 
 class Queue {
   constructor() {

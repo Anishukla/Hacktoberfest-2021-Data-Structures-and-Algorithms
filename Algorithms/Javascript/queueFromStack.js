@@ -1,6 +1,9 @@
 // implement a queue data structure using two stacks
 // implement functions add, remove, and peek
 
+// Contributor: Shreyas Devalapurkar
+// Complexity: O(N)
+
 const Stack = require('../../Data\ Structures/Stack/stack');
 
 class Queue {

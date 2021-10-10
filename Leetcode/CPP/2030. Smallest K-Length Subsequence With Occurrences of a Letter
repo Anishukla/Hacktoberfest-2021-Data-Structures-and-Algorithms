@@ -1,0 +1,65 @@
+/*
+
+Problem Link : https://leetcode.com/contest/weekly-contest-261/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/
+Author : sagsango
+Approach : we will greadly try to take the letters from 'a' to 'b' and check if after taking this latter, we can be able to make rest of subsequence,
+
+*/
+
+
+
+const int nax = 5e4+10;       // maximum length of string s.
+int dp[nax][26], ct[nax][26]; // dp[i][j] = least right index of latter( 'a' + j )
+                              // ct[i][j] = total count of latter( 'a' + j ) from index i to n.
+class Solution {
+public:
+    string smallestSubsequence(string s, int k, char letter, int repetition){
+        int n = s.length();
+        s = '$' + s;
+        for(int i=0;i<=n;++i){
+            for(int j=0;j<26;++j){
+                dp[i][j] = ct[i][j] = 0;
+            }
+        }
+        for(int i=n-1;i>=0;i--){
+            for(int j=0;j<26;++j){
+                dp[i][j] = dp[i+1][j];
+            }
+            dp[i][s[i+1]-'a'] = i+1;
+        }
+        for(int i=n;i>=1;--i){
+            ct[i][s[i]-'a']+=1;
+            if( i != n ){
+                for(int j=0;j<26;++j){
+                    ct[i][j] += ct[i+1][j];
+                }
+            }
+        }
+        string ans(k,'\0');
+        int i = 0, t = 0;
+        while( i <= n  && t < k ){
+            bool found = false;
+            for(int j=0;j<26 && !found;++j){
+                int idx = dp[i][j];
+                if( idx &&   // there is a indx after i 
+                   ct[idx][letter-'a'] >= repetition  && // count of key letter from idx to n is >= repetition 
+                   n - idx + 1  >= k - t  && // there are at least k-t totat latters from idx to n, ( t = curr lenght taken )
+                   k - t - (j != letter-'a') >= repetition  // there are atleast req latters after that indx 
+                  ){
+                    ans[t++] = j + 'a';
+                    i = idx;
+                    repetition -= (letter - 'a' == j);
+                    found = 1;
+                    break;
+                }
+            }
+            if( !found )
+                return "ERROR"; 
+            
+        }
+        return ans;
+        
+        
+        
+    }
+}

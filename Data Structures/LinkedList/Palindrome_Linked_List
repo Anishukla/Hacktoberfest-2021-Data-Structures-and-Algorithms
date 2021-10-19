@@ -1,0 +1,47 @@
+// Function to check if a singly linked list is palindrome
+
+// APPROACH - 1 (USING STACK)
+
+ -> COMPLEXITY := O(N)
+ 
+ ALGORITHM:
+ - A simple solution is to use a stack of list nodes. This mainly involves three steps.
+ - Traverse the given list from head to tail and push every visited node to stack.
+ - Traverse the list again. For every visited node, pop a node from stack and compare data of popped node with currently visited node.
+ - If all nodes matched, then return true, else false.
+ 
+ // IMPLEMENTATION
+ 
+ class Solution{
+  public:
+    //Function to check whether the list is palindrome.
+    bool isPalindrome(Node *head)
+    {
+        //Your code here
+        Node *ptr = head;
+        //declare a stack
+        stack<int> s;
+        
+        int i=0, top=-1, f=0;
+        while(ptr != NULL) {
+            //top = top + 1;
+            //arr[top] = ptr->data;
+            s.push(ptr->data);
+            ptr = ptr->next;
+        }
+        
+        while(head != NULL) {
+            int p = s.top();
+            //top = top -1;
+            s.pop();
+            
+            if(head->data != p) {
+                return false;
+            }
+            
+            head = head->next;
+            
+        }
+        return true;
+    }
+};

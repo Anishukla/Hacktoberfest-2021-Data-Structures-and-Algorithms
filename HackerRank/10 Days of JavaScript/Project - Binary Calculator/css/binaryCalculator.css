@@ -1,0 +1,28 @@
+body {
+    width: 33%
+}
+#res {
+    background-color: lightgray;
+    border: solid;
+    height: 48px;
+    font-size: 20px;
+}
+#btns > .binaryButton {
+    background-color: lightgreen;
+    color: brown;
+}
+#btns > .operatorButton {
+    background-color: black;
+    color: red;
+}
+#btns > .utilityButton {
+    background-color: darkgreen;
+    color: white;
+}
+#btns > .button {
+    width: 25%;
+    height: 36px;
+    font-size: 18px;
+    /* This is just here to create the even spacing you'd see with HTML buttons */
+    margin: 0px;
+}

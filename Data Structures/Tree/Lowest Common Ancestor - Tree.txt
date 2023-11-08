@@ -1,0 +1,65 @@
+
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+//Definition of Node for Binary search tree
+struct node {
+	int data;
+	node* left;
+	node* right;
+};
+
+
+
+node* insert( node* root , int d)
+{
+    if(root==NULL)
+    {
+        node* t = new node();
+        t->data =d;
+        t->right=t->left=NULL;
+        root=t;
+    }
+
+    else if(d <= root->data){
+            root->left=insert(root->left, d);
+    }
+    else {
+        root->right=insert(root->right, d);
+
+}
+return root;
+}
+
+
+node* lca(node* root , int x, int y)
+{
+    if(root==NULL)return 0;
+
+    if(root->data >x  && root->data >y)
+    return ca(root->left , x,y);
+    if(root->data <x  && root->data <y)
+    return ca(root->right , x,y);
+
+    return root;
+
+}
+
+int main(){
+int n;
+cin>>n;
+node * root = NULL;
+while(n>0)
+    { n--;
+        int x;
+        cin>>x;
+      root=  insert(root , x);
+    }
+    int x,y;
+    cin>>x>>y;
+    node*x1= lca(root,x,y);
+    cout<<x1->data;
+return 0;
+}
